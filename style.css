@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: green;
+  }
+
+  #first {
+    width: 30%;
+    height: auto;
+    margin: auto;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  #first1 {
+    height: 70px;
+    margin: 6%;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    justify-content: end;
+    align-items: center;
+  }
+
+  #in {
+    height: 50px;
+    width: 100%;
+    border: 0px;
+    font-size: larger;
+  }
+
+  #first > div ~ div {
+    display: flex;
+    height: 70px;
+    margin: 5%;
+  }
+
+  #first > div ~ div > div {
+    text-align: center;
+
+    width: 21%;
+    margin: auto;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+  }
+
+  #first > div ~ div > div ~ div ~ div ~ div {
+    background-color: black;
+    color: white;
+  }
+
+  #first1 ~ div ~ div ~ div ~ div > div {
+    background-color: red;
+  }
+
+  #first1 ~ div ~ div ~ div ~ div > div + div {
+    background-color: white;
+  }
+
+  #first1 ~ div ~ div ~ div ~ div > div + div ~ div {
+    background-color: black;
+    color: white;
+  }
+
+  @media all and (min-width: 451px) and (max-width: 769px) {
+    #first {
+        width: 60%;
+    }
+  }
+
+  @media all and (min-width: 100px) and (max-width: 450px) {
+    #first {
+        width: 80%;
+    }
+  }
